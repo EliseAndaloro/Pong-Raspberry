@@ -43,9 +43,6 @@ while True:
       
     if y==7:
       y_sens=-1
-    
-    if x==0:
-      x_sens=1
 
     if x==1 and y==ry:
       x_sens=1
@@ -55,4 +52,12 @@ while True:
       
     if x==1 and y==ry_sens+1:
       x_sens=1
+    
+    if x==1 and y ==ry_sens+2:
+      x_sens=1
       
+    if x==0:
+      sense.clear(0,0,0)
+      sense.set_pixel(x,y,34, 206, 8)
+      afficheRaquette()
+      break
