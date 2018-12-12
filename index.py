@@ -15,13 +15,16 @@ ry=0
 
 ry_sens=1
 
+
 def afficheRaquette():
   sense.set_pixel(rx,ry, 242, 62, 104)
   sense.set_pixel(rx,ry_sens, 242,62,104)
   sense.set_pixel(rx,ry_sens+1, 242,62,104)
+
   
   
 sense.set_pixel(x,y,66, 134, 244)
+
 while True:
     
     sense.clear(0,0,0)
@@ -42,5 +45,14 @@ while True:
       y_sens=-1
     
     if x==0:
+      x_sens=1
+
+    if x==1 and y==ry:
+      x_sens=1
+      
+    if x==1 and y==ry_sens:
+      x_sens=1
+      
+    if x==1 and y==ry_sens+1:
       x_sens=1
       
