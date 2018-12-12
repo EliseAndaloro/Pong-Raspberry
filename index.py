@@ -10,4 +10,4 @@ while x<7:
     sense.set_pixel(x,y,66,134,244)
     time.sleep(0.5)
     x= x+1
-    y=y+1
+    y=y-1
